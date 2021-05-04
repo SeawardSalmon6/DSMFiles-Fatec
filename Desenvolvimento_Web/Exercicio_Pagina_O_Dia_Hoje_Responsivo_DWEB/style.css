@@ -1,0 +1,257 @@
+/* --------------- TABLE OF CONTENTS ----------------
+
+  1. Reseting CSS & Patterns
+    1.1 Reseting CSS Structures
+    1.2 Applying Site Patterns Styles
+
+  2. Formating Sections General Styles
+
+  3. Designing Sections Inner-Items
+    3.1 Styling Items Elements
+  
+  4. Responsive Adaptations 1st Responsive
+    4.1.1 1st Responsive - Formating Sections 
+    4.1.2 1st Responsive - Designing Sections Items 
+    4.2.1 2nd Responsive - Designing Sections Items
+    4.2.2 2nd Responsive - Styling Items Elements
+    4.3.1 3rd Responsive - Designing Sections Items
+    4.3.2 3nd Responsive - Styling Items Elements
+
+------------------------------------------------- */
+
+/* 1. Reseting CSS & Patterns */
+
+html, body, .divider h2 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: #EBEBEB;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+/* 1.2 Applying Site Patterns Styles */
+
+:root {
+  --main-bg-green: #ACFF00;
+}
+
+h1 { font-size: 36px; margin: 14px 0; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+p { font-family: "Roboto", sans-serif; }
+
+/* 2. Formating Sections General Styles */
+
+.container, .navbar, .footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navbar {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.full {
+  max-width: 100%;
+  background: var(--main-bg-green);
+}
+
+.divider {
+  background: var(--main-bg-green);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  max-height: 148px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* 3. Designing Sections Inner-Items */
+
+.headline {
+  margin-bottom: 40px;
+}
+
+.headline-txt {
+  max-width: 470px;
+}
+
+.interview {
+  margin-bottom: 50px;
+}
+
+.interview-txt {
+  max-width: 225px;
+}
+
+.item {
+  max-width: 225px;
+  background: white;
+  box-shadow: 0px 4px 4px 0px #0000001F;
+}
+
+.item-txt {
+  padding: 6px;
+}
+
+iframe {
+  width: 715px;
+  height: 470px;
+  margin-right: 20px;
+}
+
+/* 3.1 Styling Items Elements */
+
+.navbar h2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.divider { padding-left: 3px; }
+
+.headline h2, .interview-txt h2 {
+  margin-top: 0;
+}
+
+.headline img {
+  max-width: 470px;
+  max-height: 292px;
+  margin-right: 20px;
+}
+
+.other-news .flex img {
+  max-width: 225px;
+}
+
+.footer h2 {
+  margin-bottom: 0;
+}
+
+.footer h3 {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 4. Responsive Adaptations */
+
+@media screen and (max-width: 960px) {
+  
+  /* 4.1.1 1st Responsive - Formating Sections */
+
+  .container, .navbar, .footer {
+    padding: 0 10px;
+  }
+
+  /* 4.1.2 1st Responsive - Designing Sections Items */
+  
+  .other-news .flex {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .interview-content {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .interview-txt {
+    max-width: 715px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  iframe {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  /* 4.2.1 2nd Responsive - Designing Sections Items */
+  
+  .navbar, .footer {
+    display: block;
+    padding: 10px;
+  }
+
+  .headline {
+    display: block;
+    text-align: center;
+  }
+  
+  .headline-txt {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .right-col {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  /* 4.2.2 2nd Responsive - Styling Items Elements */
+
+  .navbar h1 { margin-bottom: 0; }
+
+  .headline img {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+
+  .navbar h2, .footer h2 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  
+  /* 4.3.1 3rd Responsive - Designing Sections Items */
+
+  .headline-txt {
+    max-width: 340px;
+  }
+
+  .item {
+    max-width: 340px;
+  }
+
+  .interview-txt {
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+    max-height: 210px;
+  }
+  
+  /* 4.3.2 3nd Responsive - Styling Items Elements */
+
+  .headline img {
+    max-width: 100%;
+    max-height: 210px;
+  }
+
+  .other-news .item img {
+    max-width: 100%;
+  }
+
+  .other-news .item img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,89 @@
+:root {
+  --cor-bg-principal: #003650;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body { background-color: white; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Rubik";
+  font-style: italic;
+  box-shadow: 0 0.5em 1em rgba(50, 50, 50, 0.6);
+}
+
+#top { max-height: 620px; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background-color: var(--cor-bg-principal);
+  position: sticky;
+  top: 0;
+}
+
+.buttons a, .logo a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+} 
+
+p { font-weight: 300; }
+
+.about {
+  padding: 80px 150px;
+  background-color: #ebebeb;
+  max-height: 300px;
+}
+
+#services {
+  padding: 80px;
+  color: white;
+  background-color: var(--cor-bg-principal);
+}
+
+.our-services {
+  display: flex;
+  column-gap: 50px;
+}
+
+.job {
+  padding: 10px;
+  text-justify: justify;
+}
+
+#clients {
+  padding: 80px;
+  background-color: #ebebeb;
+}
+
+.our-clients {
+  display: flex;
+  column-gap: 50px;
+}
+
+.client { padding-top: 30px; }
+
+#local {
+  padding: 80px;
+  background: var(--cor-bg-principal);
+  display: flex;
+  color: white;
+}
+
+.footer p {
+  background-color: #ebebeb;
+  color: #003650;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+

@@ -1,0 +1,59 @@
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body { background: #ebebeb; font-family: serif; }
+.header, .footer { background: red; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.header h1 { margin: 0; }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.article {
+  max-width: 60%;
+  text-align: justify;
+}
+
+.article img { max-width: 100%; }
+.news { max-width: 30%; }
+
+.footer h1 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .container { width: 100%; }
+  .main { display: block; }
+  .article { min-width: 100%; }
+  .news { min-width: 100%; }
+
+  .article h2 { text-align: center; }
+}

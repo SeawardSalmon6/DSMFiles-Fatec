@@ -1,0 +1,81 @@
+:root {
+  --color-bg-main: #404040;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body { background-color: #ebebeb; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Amiri", serif;
+  font-size: small;
+  line-height: 1;
+  text-align: center;
+}
+
+h3, h4 { text-transform: uppercase; margin: 0; }
+
+.intro { background: white; }
+
+.intro-txt { padding: 100px 170px; }
+
+.characters {
+  background: var(--color-bg-main);
+  padding: 90px;
+  color: white;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.item {
+  padding: 10px;
+  max-width: 190px;
+}
+
+.item h4 { margin-top: 19px; }
+
+.item img { border-radius: 50%; }
+
+.gameplay {
+  background: white;
+  padding: 100px;
+  display: flex;
+  column-gap: 90px;
+}
+
+.game-img img:first-of-type { margin-bottom: 50px; }
+
+.game-txt p { margin: 20px 0; }
+
+.about {
+  padding: 100px 170px;
+  background: var(--color-bg-main);
+  color: white;
+}
+
+.about p {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.about button {
+  margin: 40px 40px 0;
+  padding: 0 10px;
+  border: none;
+  font-family: "Amiri", serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  border-radius: 10px;
+}
