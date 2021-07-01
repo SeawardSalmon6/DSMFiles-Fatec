@@ -1,0 +1,37 @@
+body {
+  background-image: url(https://cdn.hipwallpaper.com/m/99/24/vcU3DC.jpg);
+}
+
+h2, #footer {
+  color: white;
+}
+
+.navbar {
+  background-color: #7A0002;
+}
+
+#about {
+  background-color: #47001B;
+  color: white;
+}
+
+#characters {
+  background-color: #7A0002;
+}
+
+#watch {
+  background-color: #dfb249;
+  color: white;
+}
+
+#footer {
+  background-color: #7A0002;
+}
+
+.img-logo {
+  max-width: 80px;
+}
+
+.carousel-item {
+  max-height: 500px;
+}

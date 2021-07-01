@@ -1,0 +1,44 @@
+:root {
+  --cor-bg-principal: #003650;
+}
+
+body {
+  font-family: "Rubik", arial;
+}
+
+.main {
+  box-shadow: 0 0.5em 1em rgba(50, 50, 50, 0.6);
+}
+
+nav, #services, #local {
+  background-color: var(--cor-bg-principal);
+  color: white;
+}
+
+a.section-title, .section-title, .card-title {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.img-cabecalho {
+  width: 100%;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+footer p {
+  color: var(--cor-bg-principal);
+}
+
+@media screen and (max-width: 596px) {
+  iframe {
+    width: 100%;
+  }
+}

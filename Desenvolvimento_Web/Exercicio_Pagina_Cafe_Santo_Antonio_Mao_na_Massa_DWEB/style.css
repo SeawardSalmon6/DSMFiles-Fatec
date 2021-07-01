@@ -1,0 +1,47 @@
+html, body { margin: 0; padding: 0; border: 0; }
+
+      body { background-image: url(images/background.jpg); }
+
+      .content {
+        margin: 0 auto;
+        max-width: 960px;
+        box-shadow: 0 0.5em 1em rgba(50, 50, 50, 0.6);
+      }
+
+      .sobre {
+        padding: 90px;
+        background-color: #f4f0e4;
+        color: black;
+      }
+
+      .sobre p { text-align: justify; }
+
+      .menu {
+        padding: 90px;
+        background-color: #bea074;
+      }
+
+      .cafes {
+        display: flex;
+        max-width: 780px;
+        column-gap: 20px;
+      }
+
+      h2:not(.local h2), .menu h3, .menu p { color: #3f0706; }
+
+      .item img { width: 120px; border-radius: 8px; }
+
+      .item {
+        background-color: #fff;
+        max-width: 140px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 1px 3px 4px 0px rgba(50, 50, 50, 0.6);
+      }
+
+      .txt-local {
+        padding: 90px;
+        background-color: #3f0706;
+        color: #fff;
+      }

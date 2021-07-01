@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Telechamada</title>
+</head>
+<body>
+  <div class="container px-0">
+    <audio src="myAudio.mp3" id="myAudio"></audio>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main-red align-content-center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">telechamada.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item p-1 ms-0 ms-lg-3 ms-auto">
+              <a class="nav-link text-white text-uppercase" aria-current="page" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item p-1 ms-0 ms-lg-3 ms-auto">
+              <a class="nav-link text-white text-uppercase" href="#features">Características</a>
+            </li>
+            <li class="nav-item p-1 ms-0 ms-lg-3 ms-auto">
+              <a class="nav-link text-white text-uppercase" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="images/header.png" alt="Cabeçalho do nosso Site." class="header-img">
+    <section class="container p-4">
+      <div class="col-9 col-lg-7 text-center mx-auto product-text">
+        <h1 class="title-text">Conheça o Picturephone</h1>
+        <div class="body-text mt-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="container p-2">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+        <div class="col-9 col-md-6 mx-auto">
+          <div class="about-txt">
+            <h2 class="title-text">Como na vida real</h2>
+            <div class="body-text mt-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 col-md-6 text-center mx-auto">
+          <img src="images/about.png" alt="Imagem de uma mulher utilizando o Picturephone." class="img-fluid">
+        </div>
+      </div>
+    </section>
+    <section id="features" class="container p-2 py-5">
+      <h2 class="section-title text-center text-sm-start">Características</h2>
+      <div class="row row-cols-1 row-cols-sm-2 gap-4 gap-sm-0 mt-4">
+        <div class="col-9 col-md-6 mx-auto">
+          <div class="card">
+            <img src="images/realtime-feature.png" class="card-img-top">
+            <div class="card-body h-100">
+              <h3 class="card-title">Tempo real</h4>
+              <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 col-md-6 mx-auto">
+          <div class="card">
+            <img src="images/data-feature.png" class="card-img-top">
+            <div class="card-body h-100">
+              <h3 class="card-title">Transmita dados</h3>
+              <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container p-2 py-5">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3">
+        <div class="col-9 col-md-4 text-center mx-auto">
+          <img src="images/contact.png" alt="" class="rounded-circle img-fluid">
+        </div>
+        <div class="col-9 col-md-4 p-3 p-lg-3 p-xl-0 mx-auto">
+          <div class="quote-text">
+            <h1 class="title-text">“É uma maravilha! Parece que estou lá na casa da minha mãe”</h1>
+            <p class="body-text fst-italic mt-3">Joana da Silva</p>
+          </div>
+        </div>
+        <div class="col-9 col-md-4 mx-auto">
+          <div class="card card-body">
+            <h3 class="card-title">Quer falar pelo Picturephone?</h3>
+            <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus.</p>
+            <button onclick="document.getElementById('myAudio').play()" type="button" class="btn bg-main-red p-3">Ligue agora!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-main-red p-2">
+      <div class="footer-body">
+        <h3 class="footer-title">Telechamada.com</h3>
+        <p class="footer-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

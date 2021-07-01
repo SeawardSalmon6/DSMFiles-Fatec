@@ -1,0 +1,32 @@
+:root {
+  --var-main-bg: #BF1717;
+  --var-gray-bg: #E5E5E5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--var-gray-bg);
+}
+
+h1, h2, h3, h4, .navbar-brand, .btn {
+  font-weight: 700;
+}
+
+.bg-main-red {
+  background-color: var(--var-main-bg);
+  color: white;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--var-gray-bg);
+  border: 0;
+}
+
+.btn {
+  font-size: 24px;
+}
+
