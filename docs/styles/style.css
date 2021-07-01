@@ -8,6 +8,10 @@ body {
   background-color: var(--var-gray-bg);
 }
 
+section {
+  background-color: white;
+}
+
 h1, h2, h3, h4, .navbar-brand, .btn {
   font-weight: 700;
 }
