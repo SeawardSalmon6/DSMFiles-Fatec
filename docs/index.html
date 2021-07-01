@@ -4,71 +4,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
-  <link rel="shortcut icon" href="images/logo.png" />
-  <title>Blob Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Telechamada</title>
 </head>
 <body>
-  <div class="container">
-    <div id="header">
-      <a href="#header"><img src="images/logo.png" alt="Logo da empresa Blob Games." /></a>
-      <div class="botoes">
-        <a href="#products">Produtos</a>
-        <a href="#local">Localização</a>
-        <a href="#contact">Contato</a>
-      </div>
-    </div>
-    <div class="about">
-      <img src="images/cabecalho.jpg" alt="Imagem promocional do site." />
-      <div class="about-txt">
-        <h2>Nós Amamos Videogames!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <div id="products">
-      <h2>Nossos produtos</h2>
-      <div class="flex">
-        <div class="item">
-          <h3>Consoles</h3>
-          <img src="images/consoles.jpg" alt="Card informativo sobre um de nossos produtos" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="item">
-          <h3>Jogos</h3>
-          <img src="images/jogos.jpg" alt="Card informativo sobre um de nossos produtos" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="item">
-          <h3>Colecionáveis</h3>
-          <img src="images/colecionaveis.jpg" alt="Card informativo sobre um de nossos produtos" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <div class="container px-0">
+    <audio src="myAudio.mp3" id="myAudio"></audio>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main-red align-content-center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">telechamada.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item p-1 ms-0 ms-lg-3 ms-auto">
+              <a class="nav-link text-white text-uppercase" aria-current="page" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item p-1 ms-0 ms-lg-3 ms-auto">
+              <a class="nav-link text-white text-uppercase" href="#features">Características</a>
+            </li>
+            <li class="nav-item p-1 ms-0 ms-lg-3 ms-auto">
+              <a class="nav-link text-white text-uppercase" href="#contact">Contato</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div id="local">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2038.8426324688544!2d10.44236871559766!3d59.26877812291875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646b73319a4c213%3A0xaaa1d307ff0f2268!2sBlob%20Games%20Felix%20Adrian%20Lauritsen%20Kj%C3%B8lner!5e0!3m2!1spt-BR!2sbr!4v1618010893682!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <div class="local-txt">  
-        <h2>Venha nos visitar</h2>
-        <p>Rua João da Roça, 327 - Jardim das Maravilhas - Ipê Amarelo - SC</p>
+    </nav>
+    <img src="images/header.png" alt="Cabeçalho do nosso Site." class="header-img">
+    <section class="container p-4">
+      <div class="col-9 col-lg-7 text-center mx-auto product-text">
+        <h1 class="title-text">Conheça o Picturephone</h1>
+        <div class="body-text mt-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+        </div>
       </div>
-    </div>
-    <div id="contact">
-      <div class="contact-txt">
-        <h2>Entre em contato</h2>
-        <p>Deixe sua mensagem ou ligue pra gente!</p>
-        <ul>
-          <li>Telefone: (19) 3456-7890</li>
-          <li>WhatsApp: +55 19 93456-7890</li>
-          <li>E-mail: blobgames@blobgames.com.br</li>
-        </ul>
+    </section>
+    <section id="about" class="container p-2">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+        <div class="col-9 col-md-6 mx-auto">
+          <div class="about-txt">
+            <h2 class="title-text">Como na vida real</h2>
+            <div class="body-text mt-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 col-md-6 text-center mx-auto">
+          <img src="images/about.png" alt="Imagem de uma mulher utilizando o Picturephone." class="img-fluid">
+        </div>
       </div>
-      <img src="images/contato.jpg" alt="Imagem ilustrativa de um telefone e o símbolo de um arroba (e-mail).">
-    </div>
-    <div class="footer">
-      <p>Blob Games, 2018</p>
-    </div>
+    </section>
+    <section id="features" class="container p-2 py-5">
+      <h2 class="section-title text-center text-sm-start">Características</h2>
+      <div class="row row-cols-1 row-cols-sm-2 gap-4 gap-sm-0 mt-4">
+        <div class="col-9 col-md-6 mx-auto">
+          <div class="card">
+            <img src="images/realtime-feature.png" class="card-img-top">
+            <div class="card-body h-100">
+              <h3 class="card-title">Tempo real</h4>
+              <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 col-md-6 mx-auto">
+          <div class="card">
+            <img src="images/data-feature.png" class="card-img-top">
+            <div class="card-body h-100">
+              <h3 class="card-title">Transmita dados</h3>
+              <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container p-2 py-5">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3">
+        <div class="col-9 col-md-4 text-center mx-auto">
+          <img src="images/contact.png" alt="" class="rounded-circle img-fluid">
+        </div>
+        <div class="col-9 col-md-4 p-3 p-lg-3 p-xl-0 mx-auto">
+          <div class="quote-text">
+            <h1 class="title-text">“É uma maravilha! Parece que estou lá na casa da minha mãe”</h1>
+            <p class="body-text fst-italic mt-3">Joana da Silva</p>
+          </div>
+        </div>
+        <div class="col-9 col-md-4 mx-auto">
+          <div class="card card-body">
+            <h3 class="card-title">Quer falar pelo Picturephone?</h3>
+            <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus.</p>
+            <button onclick="document.getElementById('myAudio').play()" type="button" class="btn bg-main-red p-3">Ligue agora!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-main-red p-2">
+      <div class="footer-body">
+        <h3 class="footer-title">Telechamada.com</h3>
+        <p class="footer-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
