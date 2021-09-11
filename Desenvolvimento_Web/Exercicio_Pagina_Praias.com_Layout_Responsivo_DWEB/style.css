@@ -133,6 +133,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .footer h2 {
