@@ -70,7 +70,7 @@
         <div id="invite">
           <h2>Quer viajar?</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec quam volutpat, pulvinar risus vitae, ullamcorper lectus. Nunc semper odio in ultricies pharetra. Nunc tempus arcu lectus. Nam eu viverra.</p>
-          <button onclick="javascript:{ alert('Zuuuuuuuum (barulho do motor da aeronave)!!') }">Ligue agora!</button>
+          <button onclick="playAudio()">Ligue agora!</button>
         </div>
       </div>
     </div>
@@ -79,5 +79,12 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
+  
+  <script>
+      function playAudio() {
+          let a = new Audio("https://www.soundjay.com/transportation/sounds/stunt-plane-fly-by-01.mp3");
+          a.play();
+      }
+  </script>
 </body>
 </html>
